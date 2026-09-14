@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "author": "NovaCircuit",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 20, "left": 20, "attrs": {} },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "temp",
+      "top": -80,
+      "left": 330,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "vibration",
+      "top": 50,
+      "left": 330,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pressure",
+      "top": 180,
+      "left": 330,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "flow",
+      "top": 310,
+      "left": 330,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "current",
+      "top": 440,
+      "left": 330,
+      "attrs": { "value": "0" }
+    }
+  ],
+  "connections": [
+    [ "temp:SIG", "uno:A0", "green", [] ],
+    [ "temp:VCC", "uno:5V", "red", [] ],
+    [ "temp:GND", "uno:GND.1", "black", [] ],
+    [ "vibration:SIG", "uno:A1", "green", [] ],
+    [ "vibration:VCC", "uno:5V", "red", [] ],
+    [ "vibration:GND", "uno:GND.1", "black", [] ],
+    [ "pressure:SIG", "uno:A2", "green", [] ],
+    [ "pressure:VCC", "uno:5V", "red", [] ],
+    [ "pressure:GND", "uno:GND.1", "black", [] ],
+    [ "flow:SIG", "uno:A3", "green", [] ],
+    [ "flow:VCC", "uno:5V", "red", [] ],
+    [ "flow:GND", "uno:GND.1", "black", [] ],
+    [ "current:SIG", "uno:A4", "green", [] ],
+    [ "current:VCC", "uno:5V", "red", [] ],
+    [ "current:GND", "uno:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
